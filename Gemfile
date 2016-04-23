@@ -10,6 +10,7 @@ gem 'turbolinks', '~> 5.x'
 gem 'jbuilder', '~> 2.0'
 group :development, :test do
   gem 'byebug'
+  gem 'dotenv-rails'
 end
 group :development do
   gem 'web-console', '~> 3.0'
@@ -22,7 +23,6 @@ gem 'high_voltage', :github=>"thoughtbot/high_voltage"
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'pg'
-gem 'puma'
 gem 'simple_form'
 group :development do
   gem 'better_errors'
