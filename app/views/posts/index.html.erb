@@ -1,5 +1,16 @@
-<%= link_to 'Sign Out', signout_path %>
+<p>
+  <%= link_to 'Sign Out', signout_path %>
+</p>
 
 <h1>TipBits</h1>
 
-<%= link_to 'New Post', new_post_path %>
+<p>
+  <%= link_to 'New Post', new_post_path %>
+</p>
+
+<% @posts.each do |post| %>
+  <%= image_tag post.image.url, style: 'max-width:640px' %>
+  <p class="caption">
+    <%= post.caption %>
+  </p>
+<% end %>
