@@ -1,16 +1,22 @@
-<!-- <p>
-  <%#= link_to 'Sign Out', signout_path %>
-</p> -->
-
-<h1>TipBits</h1>
-
 <p>
   <%= link_to 'New Post', new_post_path %>
 </p>
-
-<% @posts.each do |post| %>
-  <%= image_tag post.image.url, style: 'max-width:640px' %>
-  <p class="caption">
-    <%= post.caption %>
-  </p>
-<% end %>
+<div class="posts-wrapper row">
+  <% @posts.each do |post| %>
+  <div class="post">
+    <div class="post-head">
+      <div class="name">
+        Josh Echeverri
+      </div>
+    </div>
+    <div class="image center-block">
+      <a href="<%= post_path(post) %>">
+        <%= image_tag post.image.url, class: 'img-fluid' %>
+      </a>
+    </div>
+    <p class="caption">
+      <%= post.caption %>
+    </p>
+  </div>
+  <% end %>
+</div>
