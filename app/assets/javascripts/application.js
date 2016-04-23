@@ -12,5 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui
+//= require tether
+//= require bootstrap.min
 //= require turbolinks
 //= require_tree .
