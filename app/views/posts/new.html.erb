@@ -1,5 +1,16 @@
-<%= simple_form_for @post do |f| %>
-  <%= f.input :image %>
-  <%= f.input :caption %>
-  <%= f.button :submit %>
-<% end %>
+<section class="container">
+  <div class="form-wrapper text-center">
+    <h4 style="padding-bottom:2rem;">Upload Image</h4>
+    <%= simple_form_for @post, html: { class: '', multipart: true } do |f| %>
+    <div class="form-group">
+      <%= f.input_field :image, label: "", class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.input_field :caption, label: "", placeholder: "Caption", class: "form-control form-control-lg" %>
+    </div>
+    <div class="form-group">
+      <%= f.button :submit, "Create Bit", class: "btn-success-outline btn-block" %>
+    </div>
+    <% end %>
+  </div>
+</section>

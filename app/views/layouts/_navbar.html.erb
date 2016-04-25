@@ -1,10 +1,7 @@
-<nav class="navbar navbar-light bg-faded" id="main-nav">
-  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
-    &#9776;
-  </button>
-  <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+<nav class="navbar navbar-default bg-faded" id="main-nav">
+  <div class="container">
     <a class="navbar-brand" href="<%= root_path %>">TipBits</a>
-    <ul class="nav navbar-nav">
+    <ul class="nav navbar-nav pull-xs-right">
       <%= render 'layouts/nav_links_for_auth' %>
     </ul>
   </div>

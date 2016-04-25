@@ -12,12 +12,17 @@
  *
  *= require_tree .
  *= require jquery-ui
+ *= require custom
  *= require bootstrap.min
  *= require_self
  */
 
 /* overrides */
 
-.file input {
+/*.file input {
   opacity: 100;
+}*/
+
+.text-center {
+  text-align: center;
 }
