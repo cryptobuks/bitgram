@@ -11,8 +11,9 @@
     <p class="caption">
       <%= @post.caption %>
     </p>
-    <div class="text-center">
-      <%= link_to "Go Back", posts_path %>
-    </div>
+  </div>
+  <div class="center-block btn-group" role="group">
+      <button type="button" class="btn btn-secondary"><a href="<%= edit_post_path(@post) %>">Edit</a></button>
+      <button type="button" class="btn btn-secondary">    <a href="<%= posts_path %>">Go Back</a></button>
   </div>
 </section>

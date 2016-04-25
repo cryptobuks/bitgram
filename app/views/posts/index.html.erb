@@ -7,9 +7,7 @@
       </div>
     </div>
     <div class="image center-block">
-      <a href="<%= post_path(post) %>">
-        <%= link_to (image_tag post.image.url, class: 'img-fluid'), post_path(post) %>
-      </a>
+      <%= link_to (image_tag post.image.url, class: 'img-fluid'), post_path(post) %>
     </div>
     <p class="caption">
       <%= post.caption %>
