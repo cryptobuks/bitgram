@@ -8,7 +8,7 @@
     </div>
     <div class="image center-block">
       <a href="<%= post_path(post) %>">
-        <%= image_tag post.image.url, class: 'img-fluid' %>
+        <%= link_to (image_tag post.image.url, class: 'img-fluid'), post_path(post) %>
       </a>
     </div>
     <p class="caption">
